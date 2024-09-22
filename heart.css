@@ -1,0 +1,46 @@
+/* *{
+    padding:0 ;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width:200px ;
+    height:200px ;
+    display: flex;
+}
+.left,.right{
+    width:50% ;
+    height: 100%;
+    background-color: red;
+    border-radius: 50% 50% 0% 0%;
+    transform: rotate(45deg);
+    animation-name: heart;
+    animation-duration: 3s;
+    animation-direction: alternate-reverse;
+    transition-timing-function: 2s;
+    
+
+}
+.left{
+    transform: rotate(-45deg);
+    margin-left:36px;
+}
+
+@keyframes heart {
+    
+    from{
+        transform: scale(0px);
+
+    }
+    to{
+        transform:scale(80px);
+   
+    }
+} */
