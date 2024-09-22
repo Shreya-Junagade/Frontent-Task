@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+  <head>
+   
+ <style>
+        
+        .car-container {
+            position: relative;
+            width: 500px;
+            height: 200px;
+            animation: moveCar 5s linear infinite; /* Move car across the screen */
+        }
+    
+
+        /* Car Image */
+        .car {
+            position: relative;
+            top: 50px;
+            left: 0;
+            width: 95%;
+            height: auto;
+            z-index: 1; /* Ensure car is on top of the wheels */
+        }
+
+        /* Wheel Style */
+        .wheel {
+            position: absolute;
+            width: 77px;
+            height: 77px;
+            border-radius: 50%;
+            z-index: 2; /* Wheels should be on top of the car body */
+            animation: rotate 1s linear infinite; /* Rotate wheels */
+        }
+
+        /* Front wheel position */
+        .front-wheel {
+            top: 180px;
+            left: 72px;
+        }
+
+        /* Rear wheel position */
+        .rear-wheel {
+            top: 180px;
+            right: 90px;
+        }
+
+        /* Wheel Rotation Animation */
+        @keyframes rotate {
+     from{
+     }
+     to{
+transform: rotate(360deg);
+     }
+    }
+
+      
+        @keyframes moveCar {
+         
+        from{
+             
+                transform: translateX(0);
+              
+              
+        }
+        to {
+                transform: translateX(600px);
+          
+            
+                
+            }
+        }
+        
+    </style> 
+</head>
+<body>
+ <!-- <div> 🚗</div>
+   <section> 🚗</section>
+    <article> 🚗</article>
+    <main> 🚗</main>  
+    <footer> 🚗</footer>  -->
+
+
+    <div class="car-container">
+        <!-- Car Image -->
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI0hp9C8l5ih0V8WexFPDmNQ4jZA0pjVUO3g&s" class="car" alt="Car">
+
+        <!-- Front Wheel -->
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS853GhV4YTFEuuTkOgWQM8Y4ZtZiY081zANQ&s" class="wheel front-wheel" alt="Front Wheel">
+
+        <!-- Rear Wheel -->
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS853GhV4YTFEuuTkOgWQM8Y4ZtZiY081zANQ&s" class="wheel rear-wheel" alt="Rear Wheel">
+    </div>
+</body>
+</html> 
